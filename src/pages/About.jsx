@@ -1,6 +1,7 @@
+import { Suspense } from "react";
 import { Link, Outlet } from "react-router-dom";
 
-export default function About() {
+export default function About () {
   return (
     <main>
       <h1>About Us</h1>
@@ -28,7 +29,9 @@ export default function About() {
           <Link to="reviews">Go through the reviews</Link>
         </li>
       </ul>
-      <Outlet />
+      <Suspense fallback={<div>Loading subpage...</div>}>
+        <Outlet />
+      </Suspense>
     </main>
   );
 }
