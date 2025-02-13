@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import logo from "../logo.svg"
 import clsx from "clsx";
 import css from "./AppBar.module.css";
 
@@ -10,18 +11,15 @@ export const AppBar = () => {
   return (
     <header className={css.header}>
       <p className={css.logo}>
-        <span role="img" aria-label="computer icon">
-          💻
-        </span>{" "}
-        GoMerch Store
+        <img src={logo} alt="SvitMaluka Logo" className={css.logoImage} />
       </p>
 
       <nav className={css.nav}>
         <NavLink to="/" className={buildLinkClass}>
-          Home
+          Про компанію
         </NavLink>
         <NavLink to="/about" className={buildLinkClass}>
-          About
+          Клієнтам
         </NavLink>
         <NavLink to="/products" className={buildLinkClass}>
           Products

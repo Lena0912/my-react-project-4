@@ -1,10 +1,15 @@
 import { Suspense } from "react";
 import { Link, Outlet } from "react-router-dom";
+import loyaltyImg from "/src/img/loyal.png";
+import giftCardImg from "/src/img/giftCardImg.png";
+import exclusiveImg from "/src/img/exclusiveImg.png";
+
 
 export default function About () {
   return (
     <main>
-      <h1>About Us</h1>
+      <h1>Спеціальні пропозиції</h1>
+      <p>Програма для майбутніх мам</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
         laborum amet ab cumque sit nihil dolore modi error repudiandae
@@ -18,15 +23,24 @@ export default function About () {
         dolorum illum voluptatum dolores! Quas perferendis quis alias excepturi
         eaque voluptatibus eveniet error, nulla rem iusto?
       </p>
-      <ul>
+      <ul style={{ listStyle: "none", display: "flex", gap: "20px" }}>
         <li>
-          <Link to="mission">Read about our mission</Link>
+          <Link to="mission">
+            <img src={loyaltyImg} alt="Програма лояльності" width="150" />
+            <p>Програма лояльності</p>
+          </Link>
         </li>
         <li>
-          <Link to="team">Get to know the team</Link>
+          <Link to="team">
+            <img src={giftCardImg} alt="Подарункова карта" width="150" />
+            <p>Подарункова карта</p>
+          </Link>
         </li>
         <li>
-          <Link to="reviews">Go through the reviews</Link>
+          <Link to="reviews">
+            <img src={exclusiveImg} alt="Ексклюзивні пропозиції" width="150" />
+            <p>Ексклюзивні пропозиції</p>
+          </Link>
         </li>
       </ul>
       <Suspense fallback={<div>Loading subpage...</div>}>

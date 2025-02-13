@@ -1,11 +1,17 @@
 export default function Mission () {
   return (
     <section>
-      <h2>Our mission</h2>
+      <h2>Програма лояльності</h2>
+      <h3>Дисконтна програма для постійних покупців магазину «Світ Малюка»</h3>
+      <h4>Умови програми «Клуб «Світ Малюка»</h4>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, nesciunt
-        veniam. Excepturi itaque, voluptates fugiat perspiciatis quo saepe! Iste
-        eaque porro eveniet error dicta, modi ipsum hic quis minima inventore.
+        При здійсненні покупки на суму від 50 грн., Ви отримуєте карту
+        постійного покупця. Активація картки здійснюється після внесення в
+        програму обов’язкових анкетних даних. Картка постійного покупця надає
+        право на отримання знижок та придбання товарів за спеціальним цінами
+        лише при наявності картки постійного покупця. Дія даної картки не
+        поєднується з іншими картками, акціями, знижками, купонами,
+        сертифікатами, уцінками та розпродажами.
       </p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quaerat
