@@ -1,2 +1,0 @@
-import{j as i}from"./index-C8VuBqU7.js";function e(){return i.jsxs("main",{children:[i.jsx("h1",{children:"Welcome"}),i.jsx("img",{src:"https://via.placeholder.com/960x240",alt:""}),i.jsx("p",{children:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, laboriosam placeat incidunt rem illum animi nemo quibusdam quia voluptatum voluptate."})]})}export{e as default};
-//# sourceMappingURL=Home-BNRn5eER.js.map
