@@ -1,23 +1,43 @@
-export default function Reviews () {
+import majbutniaMama from "/src/img/majbutniaMama.jpg";
+import svidoctvoMaluka from "/src/img/svidoctvoMaluka.jpg";
+export default function Reviews() {
   return (
     <section>
       <div>
-        <h2>First review - 4.6/5</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem harum
-          architecto sapiente corporis, voluptatem quas voluptatibus fugiat
-          nulla commodi quidem, dolorem distinctio inventore blanditiis illo
-          tenetur aut enim ex laborum!
-        </p>
+        <h2>Програма для майбутніх мам</h2>
+        <ul>
+          <img src={majbutniaMama} alt="Dla maibutnich mam" />
+          <li>
+            1. Принесіть копію першої сторінки або обмінну карту вагітної в
+            «Світ Малюка» та отримайте Подарункову картку на 250 грн* і Анкету
+            постійного клієнта.
+          </li>
+          <li>
+            2. Обміняйте заповнену Анкету на Дисконтну Картку «Світ Малюка».
+          </li>
+          <li>
+            3. З Дисконтною карткою Ви першими дізнаватиметесь про акційні
+            пропозиції та дати розпродажів, отримаєте знижку на товари магазину
+            від 2 до 10%, а також знижку до -20% на придбання іграшок та одягу з
+            нагоди дня народження Вашої дитини.
+          </li>
+          <li>
+            * Подарунковою карткою на 250 грн., отриманою по програмі для
+            майбутніх мам, можна частково оплатити покупку одягу, іграшок або
+            меблів за умови, що загальна вартість покупки становить не менше 500
+            грн. На таку покупку також діє дисконтна знижка.
+          </li>
+        </ul>
       </div>
       <div>
-        <h2>Second review - 4.8/5</h2>
+        <h2>Кожному малюку ми даруємо 200 грн. на ШОПІНГ!</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          nihil ea, eaque fugit amet possimus officiis asperiores aperiam facere
-          et?
+          Дорога матуся! Зареєструй Свідоцтво про народження своєї крихітки у
+          магазині «Світ Малюка» та отримай від нас Подарункову картку на 200
+          грн.! Деталі – у продавців-консультантів
         </p>
+        <img src={svidoctvoMaluka} alt="Svadoctvo pro narodzennja" />
       </div>
     </section>
   );
-};
+}

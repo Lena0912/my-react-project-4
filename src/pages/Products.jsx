@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import { ProductList } from "../components/ProductList";
-import { SearchBox } from "../components/SearchBox";
+import { SearchBox } from "../components/SearchBox/SearchBox";
 import { getProducts } from "../fakeApi";
 
 export default function Products() {

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from "../logo.svg"
+import logo from "/src/img/logo.svg";
 import clsx from "clsx";
 import css from "./AppBar.module.css";
 
@@ -10,9 +10,9 @@ const buildLinkClass = ({ isActive }) => {
 export const AppBar = () => {
   return (
     <header className={css.header}>
-      <p className={css.logo}>
+      <NavLink to="/" className={css.logo}>
         <img src={logo} alt="SvitMaluka Logo" className={css.logoImage} />
-      </p>
+      </NavLink>
 
       <nav className={css.nav}>
         <NavLink to="/" className={buildLinkClass}>

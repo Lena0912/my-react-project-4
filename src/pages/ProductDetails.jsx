@@ -1,6 +1,6 @@
 import { useLocation, useParams } from "react-router-dom";
 import { getProductById } from "../fakeApi";
-import { BackLink } from "../components/BackLink";
+import { BackLink } from "../components/BackLink/BackLink";
 
 export default function ProductDetails() {
   const { id } = useParams();
